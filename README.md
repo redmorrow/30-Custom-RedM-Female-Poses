@@ -1,19 +1,34 @@
-# RM 30 Custom Female Pose Pack — RedM
+# RM 30 Custom Female Pose Pack — Documentation
 
-**29 custom female pose animations** for RedM, delivered as native RDR2 `.ycd` stream files.
+Documentation for the RedMorrow **RM 30 Custom Female Pose Pack** (v1.0.0).
 
-This is an **animation asset pack**. It streams custom pose dictionaries to your server. Use the animations through your existing emote system, job scripts, or RDR3 natives — no framework or database required.
+## What this resource is
 
-**Author:** RedMorrow · **Version:** 1.0.0 · **Support:** [redmorrow.com](https://redmorrow.com/)
+A collection of **29 custom female pose animations** for RedM, streamed as native RDR2 `.ycd` animation dictionaries. The resource registers the animations on your server so any script or emote system can play them through standard RDR3 natives.
 
----
+This pack provides **animation assets only**. It does not include a player-facing emote menu. You use the poses through your own emote system, job scripts, photography tools, or direct native calls.
 
-## Quick start
+## Documents
 
-1. Copy the `rm_30-custom-female-pose` folder into your server's `resources` directory.
-2. Add `ensure rm_30-custom-female-pose` to `server.cfg`.
-3. Restart the server (or run `refresh` then `ensure rm_30-custom-female-pose`).
-4. Play any pose using RDR3 natives or add the entries from `clips.lua` to your emote system.
+| Document | Covers |
+| --- | --- |
+| [01-installation.md](01-installation.md) | Requirements, folder placement, `server.cfg`, first-start verification |
+| [02-integration.md](02-integration.md) | Playing poses with natives, animation flags, integrating with emote systems |
+| [03-animation-list.md](03-animation-list.md) | Complete table of every pose with dict, clip, and duration |
+| [04-configuration.md](04-configuration.md) | `config.lua` and `clips.lua` — what you can edit |
+| [05-troubleshooting.md](05-troubleshooting.md) | Symptom-first fixes for streaming, playback, and install issues |
+| [06-faq.md](06-faq.md) | Common buyer and server-owner questions |
+| [07-changelog.md](07-changelog.md) | Version history |
+| [08-support-and-licence.md](08-support-and-licence.md) | Licence summary, supported use, how to get help |
+
+## Start here — new install
+
+1. **Install the resource.** Unzip so the folder is named exactly `rm_30-custom-female-pose`. See [01-installation.md](01-installation.md).
+2. **Add to server.cfg.** `ensure rm_30-custom-female-pose`
+3. **Verify streaming.** Restart, then test one pose with the native example in [02-integration.md](02-integration.md).
+4. **Integrate.** Add the dict/clip entries from [03-animation-list.md](03-animation-list.md) into your emote system. See [02-integration.md](02-integration.md).
+
+## Quick native example
 
 ```lua
 local dict = 'redmorrow_com@pose5'
@@ -24,46 +39,12 @@ while not HasAnimDictLoaded(dict) do Wait(0) end
 TaskPlayAnim(PlayerPedId(), dict, clip, 4.0, -4.0, -1, 1, 0.0, false, 0, false, 0, false)
 ```
 
----
+Flag `1` = loop. See [02-integration.md](02-integration.md) for all play modes.
 
-## Documentation
+## Support
 
-| Document | Description |
-| --- | --- |
-| [docs/README.md](docs/README.md) | Documentation index |
-| [docs/01-installation.md](docs/01-installation.md) | Requirements, install steps, verification |
-| [docs/02-integration.md](docs/02-integration.md) | Natives, flags, emote system integration |
-| [docs/03-animation-list.md](docs/03-animation-list.md) | Full list of all poses (dict / clip names) |
-| [docs/04-configuration.md](docs/04-configuration.md) | `config.lua` and `clips.lua` reference |
-| [docs/05-troubleshooting.md](docs/05-troubleshooting.md) | Common problems and fixes |
-| [docs/06-faq.md](docs/06-faq.md) | Frequently asked questions |
-| [docs/07-changelog.md](docs/07-changelog.md) | Version history |
-| [docs/08-support-and-licence.md](docs/08-support-and-licence.md) | Licence summary and support |
+Before opening a ticket, read [05-troubleshooting.md](05-troubleshooting.md) and [06-faq.md](06-faq.md). For licence terms see [08-support-and-licence.md](08-support-and-licence.md).
 
 ---
 
-## Requirements
-
-| Requirement | Required |
-| --- | --- |
-| RedM server (RDR3) | Yes |
-| Cfx.re asset packs entitlement | Yes |
-| Framework (VORP, RSG, etc.) | No |
-| Database | No |
-| Emote / animation system | Optional |
-
----
-
-## What's included
-
-- `stream/*.ycd` — custom animation dictionaries (escrow-protected)
-- `clips.lua` — animation reference list (editable)
-- `config.lua` — basic settings (editable)
-- `docs/` — full documentation
-- `LICENSE.md` — end user licence agreement
-
----
-
-## Licence
-
-Copyright © 2026 RedMorrow. All rights reserved. See [LICENSE.md](LICENSE.md) and [docs/08-support-and-licence.md](docs/08-support-and-licence.md).
+Copyright © 2026 RedMorrow · [redmorrow.com](https://redmorrow.com/)
