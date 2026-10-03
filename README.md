@@ -1,6 +1,6 @@
 # RedM 30 Custom Female Pose Pack — Documentation
 
-Get it free - [https://redmorrow.com/products/30-custom-female-pose-animation-pack-free]([https://redmorrow.com/](https://redmorrow.com/products/30-custom-female-pose-animation-pack-free)
+Get it free - [https://redmorrow.com/products/30-custom-female-pose-animation-pack-free](https://redmorrow.com/products/30-custom-female-pose-animation-pack-free)
 
 Documentation for the RedMorrow **RM 30 Custom Female Pose Pack** (v1.0.0).
 
