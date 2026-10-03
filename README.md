@@ -48,5 +48,6 @@ Flag `1` = loop. See [02-integration.md](02-integration.md) for all play modes.
 Before opening a ticket, read [05-troubleshooting.md](05-troubleshooting.md) and [06-faq.md](06-faq.md). For licence terms see [08-support-and-licence.md](08-support-and-licence.md).
 
 ---
+[thum](https://redmorrow.com/img/1280/a4fcb6613d4a464a32e24e151d706bf79c741e8b.webp.webp)
 
 Copyright © 2026 RedMorrow · [redmorrow.com](https://redmorrow.com/)
